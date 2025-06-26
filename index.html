@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="text-content">
+        <h1>Building digital<br>products, brands<br><span class="highlight">experience.</span></h1>
+        <p>
+            Développeuse full stack avec 2 ans d'expérience <br> dans le développement des applications web, compétente dans une large gamme de technologies front-end <br>(HTML, CSS, JavaScript, frameworks comme React, Bootstrap) et back-end (PHP),<br> ainsi que dans la gestion de bases de données relationnelles (SQL).
+          </p>
+          
+      </div>
+      <div class="hero-img">
+        <img src="/images/profile.png" alt="Profile Picture" />
+      </div>
+    </section>
+  </main>
+  <section class="projects">
+    <h2>Mes Projets</h2>
+    <div class="video-gallery">
+        <!-- Projet 1 - Texte à droite -->
+        <div class="video-card">
+            <div class="video-container">
+                <video controls poster="booking-preview.jpg">
+                  <source src="/videos/booking.mp4" type="video/mp4" />
+                  Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+            <div class="project-details right-align">
+                <h3>Booking Website</h3>
+                <p>
+                  Interface moderne et intuitive pour un site de réservation. Le design responsive est réalisé avec HTML, CSS et JavaScript, avec une attention particulière portée à l'expérience utilisateur et à la fluidité de navigation.
+                </p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 2 - Texte à gauche -->
+        <div class="video-card reverse-layout">
+            <div class="project-details">
+                <h3>Site E-commerce – Cosmétiques</h3>
+                <p>
+                  Plateforme e-commerce conçue pour la vente de produits cosmétiques. Interface attrayante et responsive développée en HTML, CSS, JavaScript et Bootstrap, avec mise en page produit, panier d'achat et navigation fluide.
+                </p>
+                <div class="tech-tags">
+                    <span>Bootstrap</span>
+                    <span>Responsive</span>
+                    <span>E-commerce</span>
+                </div>
+            </div>
+            <div class="video-container">
+                <video controls poster="ecommerce-preview.jpg">
+                  <source src="/videos/e-commerce.mp4" type="video/mp4" />
+                  Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+
+        <!-- Projet 3 - Texte à droite -->
+        <div class="video-card">
+            <div class="video-container">
+                <video controls poster="restaurant-preview.jpg">
+                  <source src="/videos/restaurant.mp4" type="video/mp4" />
+                  Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+            <div class="project-details right-align">
+                <h3>Site de Restaurant</h3>
+                <p>
+                  Site web professionnel pour un restaurant avec présentation du menu, photos des plats, horaires d'ouverture et formulaire de réservation. Design responsive développé avec HTML, CSS et JavaScript.
+                </p>
+                <div class="tech-tags">
+                    <span>Mobile First</span>
+                    <span>Animation CSS</span>
+                    <span>Formulaires</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="gallery">
+    <h2 class="posters">posters & publicités</h2>
+    <div class="photo-grid">
+        
+      <!-- Poster 1 -->
+      <div class="poster-card">
+        <img src="/images/chocolat.jpeg" alt="Poster Chocolat">
+        <div class="poster-overlay">
+          <h3>Affiche Chocolat</h3>
+        </div>
+      </div>
+      
+      <!-- Poster 2 -->
+      <div class="poster-card">
+        <img src="/images/créme.jpeg" alt="Poster Crème">
+        <div class="poster-overlay">
+          <h3>Afficbe Crème</h3>
+        </div>
+      </div>
+      
+      <!-- Poster 3 -->
+      <div class="poster-card">
+        <img src="/images/nike.jpeg" alt="Poster Nike">
+        <div class="poster-overlay">
+          <h3>Promotion Nike</h3>
+        </div>
+      </div>
+      
+      <!-- Poster 4 -->
+      <div class="poster-card">
+        <img src="/images/burger.jpeg" alt="Poster Burger">
+        <div class="poster-overlay">
+          <h3>Menu Spécial</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- À ajouter en bas du fichier HTML -->
+<script>
+    const form = document.querySelector(".email-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = form.querySelector("input").value;
+      alert(`Thanks! We’ll be in touch at ${email}`);
+    });
+  </script>
+  
+</body>
+</html>
